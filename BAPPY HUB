@@ -1,0 +1,349 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local RedzHub = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local WAzure = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HohoHub = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local SlapBattlesBadgeHub = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local SlapBattlesMasteryFarm = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local AbilityWars = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.AnchorPoint = Vector2.new(1.00000001e-07, 9.99999972e-10)
+GUI.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+GUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUI.BorderSizePixel = 0
+GUI.Position = UDim2.new(0.281371772, 0, 0.355036855, 0)
+GUI.Size = UDim2.new(0, 500, 0, 250)
+
+UICorner.Parent = GUI
+
+ScrollingFrame.Parent = GUI
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0160000008, 0, 0.0320000015, 0)
+ScrollingFrame.Size = UDim2.new(0, 484, 0, 233)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 267.000031)
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = ScrollingFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(-0.000528887263, 0, 0.0995229334, 0)
+InfiniteYield.Size = UDim2.new(0, 464, 0, 50)
+InfiniteYield.Font = Enum.Font.FredokaOne
+InfiniteYield.Text = "Launch Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 28.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+UICorner_2.Parent = InfiniteYield
+
+RedzHub.Name = "Redz Hub"
+RedzHub.Parent = ScrollingFrame
+RedzHub.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+RedzHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedzHub.BorderSizePixel = 0
+RedzHub.Position = UDim2.new(-0.000528887263, 0, 0.213568553, 0)
+RedzHub.Size = UDim2.new(0, 464, 0, 50)
+RedzHub.Font = Enum.Font.FredokaOne
+RedzHub.Text = "Launch Redz Hub Blox Fruits"
+RedzHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+RedzHub.TextSize = 28.000
+RedzHub.MouseButton1Down:connect(function()
+	local Settings = {
+		JoinTeam = "Pirates"; -- Pirates/Marines
+		Translator = true; -- true/false
+	}
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+end)
+
+UICorner_3.Parent = RedzHub
+
+WAzure.Name = "W-Azure"
+WAzure.Parent = ScrollingFrame
+WAzure.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+WAzure.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WAzure.BorderSizePixel = 0
+WAzure.Position = UDim2.new(0.00200000009, 0, 0.328000009, 0)
+WAzure.Size = UDim2.new(0, 464, 0, 50)
+WAzure.Font = Enum.Font.FredokaOne
+WAzure.Text = "Launch W-Azure Blox Fruits"
+WAzure.TextColor3 = Color3.fromRGB(0, 0, 0)
+WAzure.TextSize = 28.000
+WAzure.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+end)
+
+UICorner_4.Parent = WAzure
+
+HohoHub.Name = "Hoho Hub"
+HohoHub.Parent = ScrollingFrame
+HohoHub.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+HohoHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HohoHub.BorderSizePixel = 0
+HohoHub.Position = UDim2.new(0.00200000009, 0, 0.442000002, 0)
+HohoHub.Size = UDim2.new(0, 464, 0, 50)
+HohoHub.Font = Enum.Font.FredokaOne
+HohoHub.Text = "Launch HoHo Hub Blox Fruits"
+HohoHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+HohoHub.TextSize = 28.000
+HohoHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+end)
+
+UICorner_5.Parent = HohoHub
+
+SlapBattlesBadgeHub.Name = "Slap Battles Badge Hub"
+SlapBattlesBadgeHub.Parent = ScrollingFrame
+SlapBattlesBadgeHub.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SlapBattlesBadgeHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlapBattlesBadgeHub.BorderSizePixel = 0
+SlapBattlesBadgeHub.Position = UDim2.new(0.00200000009, 0, 0.555999994, 0)
+SlapBattlesBadgeHub.Size = UDim2.new(0, 464, 0, 50)
+SlapBattlesBadgeHub.Font = Enum.Font.FredokaOne
+SlapBattlesBadgeHub.Text = "Launch Slap Battles Badge Hub"
+SlapBattlesBadgeHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+SlapBattlesBadgeHub.TextSize = 28.000
+SlapBattlesBadgeHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/UltimateBadgeHub/main/main.lua'))()
+end)
+
+UICorner_6.Parent = SlapBattlesBadgeHub
+
+SlapBattlesMasteryFarm.Name = "Slap Battles Mastery Farm"
+SlapBattlesMasteryFarm.Parent = ScrollingFrame
+SlapBattlesMasteryFarm.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SlapBattlesMasteryFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlapBattlesMasteryFarm.BorderSizePixel = 0
+SlapBattlesMasteryFarm.Position = UDim2.new(0.00200000009, 0, 0.670000017, 0)
+SlapBattlesMasteryFarm.Size = UDim2.new(0, 464, 0, 50)
+SlapBattlesMasteryFarm.Font = Enum.Font.FredokaOne
+SlapBattlesMasteryFarm.Text = "Launch Slap Battles Mastery Farm"
+SlapBattlesMasteryFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+SlapBattlesMasteryFarm.TextSize = 28.000
+SlapBattlesMasteryFarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0-BaconScripter-0/Script/refs/heads/main/Slap%20Battles/Mastery%20Farm"))()
+end)
+
+UICorner_7.Parent = SlapBattlesMasteryFarm
+
+AbilityWars.Name = "Ability Wars"
+AbilityWars.Parent = ScrollingFrame
+AbilityWars.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+AbilityWars.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AbilityWars.BorderSizePixel = 0
+AbilityWars.Position = UDim2.new(0.00200000009, 0, 0.783999979, 0)
+AbilityWars.Size = UDim2.new(0, 464, 0, 50)
+AbilityWars.Font = Enum.Font.FredokaOne
+AbilityWars.Text = "Launch Ability Wars"
+AbilityWars.TextColor3 = Color3.fromRGB(0, 0, 0)
+AbilityWars.TextSize = 28.000
+AbilityWars.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KylnDantas/ElysiumX/refs/heads/main/Loader.lua"))()
+end)
+
+UICorner_8.Parent = AbilityWars
+
+TextLabel.Parent = GUI
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 100.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0160000008, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 224, 0, 50)
+TextLabel.Font = Enum.Font.Michroma
+TextLabel.Text = "Bappy Hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 100.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0241621193, 0, 0.441829324, 0)
+Frame.Size = UDim2.new(0, 52, 0, 57)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Frame
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.0255856141, 0, -0.0012695312, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = " "
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 100)
+UICorner_9.Parent = Toggle
+
+-- Scripts:
+
+local function RMCVPDT_fake_script() -- GUI.Drag 
+	local script = Instance.new('LocalScript', GUI)
+
+	local button = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragInput, dragStart, startPos
+	
+	button.Active = true  -- Required to detect input
+	button.Selectable = true
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	userInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end)
+	
+end
+coroutine.wrap(RMCVPDT_fake_script)()
+local function ROCQE_fake_script() -- Toggle.RGB 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local toggleButton = script.Parent  -- Refers to the Toggle button
+	local runService = game:GetService("RunService")
+	local hue = 0
+	
+	runService.RenderStepped:Connect(function(deltaTime)
+		hue = (hue + deltaTime * 0.2) % 1  -- Adjust speed here
+		toggleButton.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
+	end)
+	
+end
+coroutine.wrap(ROCQE_fake_script)()
+local function KYTL_fake_script() -- Toggle.ToggleClick 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local toggleButton = script.Parent
+	local frame = toggleButton.Parent -- Frame containing the toggle button
+	local targetFrame = frame.Parent:WaitForChild("GUI") -- The GUI frame to show/hide
+	local TweenService = game:GetService("TweenService")
+	
+	local isOpen = true
+	local tweenTime = 0.3  -- seconds
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isOpen = not isOpen
+	
+		if isOpen then
+			-- Show the target frame and animate it in from the right
+			targetFrame.Visible = true
+			local tween = TweenService:Create(targetFrame, TweenInfo.new(tweenTime), {
+				Position = targetFrame:GetAttribute("OriginalPosition") or targetFrame.Position
+			})
+			tween:Play()
+		else
+			-- Store the original position the first time the toggle is clicked
+			if not targetFrame:GetAttribute("OriginalPosition") then
+				targetFrame:SetAttribute("OriginalPosition", targetFrame.Position)
+			end
+			-- Animate the target frame to slide off the screen to the right
+			local tween = TweenService:Create(targetFrame, TweenInfo.new(tweenTime), {
+				Position = targetFrame.Position + UDim2.new(1, 0, 0, 0)  -- Moves it off the screen to the right
+			})
+			tween:Play()
+			tween.Completed:Connect(function()
+				targetFrame.Visible = false
+			end)
+		end
+	end)
+	
+end
+coroutine.wrap(KYTL_fake_script)()
+local function JCUITK_fake_script() -- Toggle.Drag 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local button = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragInput, dragStart, startPos
+	
+	button.Active = true  -- Required to detect input
+	button.Selectable = true
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	userInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end)
+	
+end
+coroutine.wrap(JCUITK_fake_script)()
